@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import '../App.css'
 
 const Landing = () => {
     const [news, setNews] = useState([]);
@@ -37,9 +38,9 @@ console.log(news)
         <Wrapper>
             <Form>
                 <HeadWrap>
-                    <Header>2TAP.GG</Header>
+                    <Header className="font">2TAP.GG</Header>
                 </HeadWrap>
-                <Label htmlFor="riotid">Enter a Riot ID:</Label><br/>
+                <Label htmlFor="riotid" className="font">Enter a Riot ID:</Label><br/>
                 <Wrap>
                     <Input type="text" id="riotid" name="riotid"/>
                     {'>'}
@@ -55,7 +56,7 @@ console.log(news)
             </Reyna>
         </Wrapper>
         <Wrapper2>
-            <NewsHeader>
+            <NewsHeader className="font">
                 Valorant //         NEWS //
             </NewsHeader>
             <NewsBorder>
@@ -64,7 +65,7 @@ console.log(news)
              news.map(item => (
                  <>
                 <div className="nList">
-                    <h3><a href={item.url}>{item.title}</a></h3>
+                    <h3 className="font"><a href={item.url}>{item.title}</a></h3>
                     <p>{item.author} {'//'} Published: {item.publishedAt}</p>
                     <p className="desc">{item.description}</p>
                 </div>
@@ -159,14 +160,6 @@ const Form = styled.form`
     `;
 const Header = styled.h1`
     font-size: 120px;
-    @font-face {
-        font-family: 'VALORANT'; 
-        src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
-        url('./src/Landing/VALORANT.woff') format ('opentype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      font-family: Valorant;
     padding-top: 1.5%;
     width: 100%;
     margin-top: 15%;
@@ -208,14 +201,21 @@ const Wrap = styled.div`
     font-size: 20px;
     display: flex;
     align-items: center;
-    @font-face {
+    @font-face { 
         font-family: 'VALORANT'; 
-        src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
-        url('./src/Landing/VALORANT.woff') format ('opentype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      font-family: Valorant;
+        src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'); 
+        font-weight: normal; 
+        font-style: normal; 
+    }
+
+    @font-face { 
+    font-family: 'VALORANT'; 
+    src: url('./src/Landing/VALORANT.woff') format('woff');
+    url('./src/Landing/VALORANT.ttf') format('truetype'), 
+    url('./src/Landing/VALORANT.svg#VALORANT') format('svg');
+    font-weight: normal; 
+    font-style: normal; 
+}
     `
 
 const Button = styled.button`
@@ -265,14 +265,22 @@ const Wrapper = styled.div`
 
 const Wrapper2 = styled.div`
     margin-top: 1%;
-    @font-face {
+    @font-face { 
         font-family: 'VALORANT'; 
-        src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
-        url('./src/Landing/VALORANT.woff') format ('opentype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      font-family: Valorant;
+        src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'); 
+        font-weight: normal; 
+        font-style: normal; 
+    }
+
+    @font-face { 
+    font-family: 'VALORANT'; 
+    src: url('./src/Landing/VALORANT.woff') format('woff');
+    url('./src/Landing/VALORANT.ttf') format('truetype'), 
+    url('./src/Landing/VALORANT.svg#VALORANT') format('svg');
+    font-weight: normal; 
+    font-style: normal; 
+}
+    
     width: 100%;
     background-color: #2d3436;
     z-index: -2;
@@ -284,14 +292,22 @@ const Wrapper2 = styled.div`
 
 const NewsHeader = styled.div`
 font-size: 72px;
-@font-face {
+@font-face { 
     font-family: 'VALORANT'; 
-    src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
-    url('./src/Landing/VALORANT.woff') format ('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  font-family: Valorant;
+    src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face { 
+font-family: 'VALORANT'; 
+src: url('./src/Landing/VALORANT.woff') format('woff');
+url('./src/Landing/VALORANT.ttf') format('truetype'), 
+url('./src/Landing/VALORANT.svg#VALORANT') format('svg');
+font-weight: normal; 
+font-style: normal; 
+}
+
 color: white;
 margin-left: 10.5%;
 letter-spacing: -7.7px;

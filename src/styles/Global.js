@@ -2,14 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 
-@font-face {
-  font-family: 'VALORANT'; 
-  src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
-  url('./src/Landing/VALORANT.woff') format ('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
   *,
   *::after,
   *::before {
@@ -53,6 +45,7 @@ const GlobalStyles = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
+
 
 
 
