@@ -282,11 +282,13 @@ const NewsHeader = styled.div`
 font-size: 72px;
 font-family: VALORANT Regular;
 @font-face {
-    font-family: 'VALORANT'; 
-    src: url('public/css/VALORANT.eot') format('embedded-opentype');
+    font-family: 'VALORANT Regular'; 
+    src: url('VALORANT.eot') format('embedded-opentype'),
+    url('VALORANT.woff') format ('opentype');
     font-weight: normal;
     font-style: normal;
   }
+
 color: white;
 margin-left: 10.5%;
 letter-spacing: -7.7px;
