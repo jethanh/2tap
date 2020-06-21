@@ -7,7 +7,13 @@ const Landing = () => {
     const [news, setNews] = useState([]);
 
     const fetchNews = () => {
-            axios.get('https://newsapi.org/v2/everything?q=valorant&language=en&apiKey=f36ea9dacbad4172adfd0362de6ce7bf')
+        const url = 'http://newsapi.org/v2/everything?' +
+        'q=valorant&' +
+        'from=2020-05-21&' +
+        'sortBy=popularity&language=en&' +
+        'apiKey=f36ea9dacbad4172adfd0362de6ce7bf';
+    
+            axios.get(url)
             .then(ress => {
                 setNews(ress.data.articles)
             })
@@ -50,7 +56,7 @@ console.log(news)
         </Wrapper>
         <Wrapper2>
             <NewsHeader>
-                VALORaNT //         NEWS //
+                Valorant //         NEWS //
             </NewsHeader>
             <NewsBorder>
                 <NewsWrapper>
