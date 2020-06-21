@@ -7,14 +7,14 @@ import '../App.css'
 const Landing = () => {
     const [news, setNews] = useState([]);
 
-    const fetchNews = () => {
+    const fetchNews = async () => {
         const url = 'http://newsapi.org/v2/everything?' +
         'q=valorant&' +
         'from=2020-05-21&' +
         'sortBy=popularity&language=en&' +
         'apiKey=f36ea9dacbad4172adfd0362de6ce7bf';
     
-            axios.get(url)
+            await axios.get(url)
             .then(ress => {
                 setNews(ress.data.articles)
             })
@@ -41,13 +41,19 @@ console.log(news)
                     <Header className="font">2TAP.GG</Header>
                 </HeadWrap>
                 <Label htmlFor="riotid" className="font">Enter a Riot ID:</Label><br/>
-                <Wrap>
+                <Wrap className="font">
                     <Input type="text" id="riotid" name="riotid"/>
                     {'>'}
                     <LilInput type="text" id="tag" name="tag"/>
                     <Button>TAP</Button>
                 </Wrap>
             </Form>
+            <Stripe>
+                <img src="https://i.ya-webdesign.com/images/stripes-transparent-red-4.gif" alt="Valorant Red Stripe"/>
+            </Stripe>
+            <Stripe2>
+                <img src="https://i.ya-webdesign.com/images/stripes-transparent-red-4.gif" alt="Valorant Red Stripe"/>
+            </Stripe2>
             <Jett>
                 <img src="https://vignette.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png/revision/latest?cb=20200602020209" alt="Valorant Jett"/>
             </Jett>
@@ -57,7 +63,7 @@ console.log(news)
         </Wrapper>
         <Wrapper2>
             <NewsHeader className="font">
-                Valorant //         NEWS //
+                VAlorant //         NEWS //
             </NewsHeader>
             <NewsBorder>
                 <NewsWrapper>
@@ -157,6 +163,9 @@ const Form = styled.form`
     margin-top: 15%;
     margin-left: 40%;
     width: 60%;
+    @media only screen and (max-width: 600px) {
+        margin-left: 10%;
+    }
     `;
 const Header = styled.h1`
     font-size: 120px;
@@ -164,6 +173,7 @@ const Header = styled.h1`
     width: 100%;
     margin-top: 15%;
     margin-bottom: -5%;
+    
 `
 const HeadWrap = styled.div`
 width: 50%;
@@ -177,6 +187,9 @@ const Input = styled.input`
     background-color: rgb(242, 249, 255);
     border: 1px solid black;
     padding: 7px;
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
     
 
     :focus {
@@ -192,6 +205,10 @@ const LilInput = styled.input`
     background-color: rgb(242, 249, 255);
     border: 1px solid black;
     padding: 7px;
+    @media only screen and (max-width: 600px) {
+        width: 30%;
+        
+    }
     :focus {
         outline: none;
         border: 1px solid black;
@@ -201,6 +218,11 @@ const Wrap = styled.div`
     font-size: 20px;
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 600px) {
+        width: 140%;
+        
+    }
+    
     @font-face { 
         font-family: 'VALORANT'; 
         src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'); 
@@ -246,6 +268,9 @@ const Jett = styled.div`
     margin-left: 11%;
     top: 9%;
     z-index: -1;
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
     `
 
 const Reyna = styled.div`
@@ -255,7 +280,31 @@ const Reyna = styled.div`
     margin-left: 65%;
     top: 4%;
     z-index: -1;
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
     `
+
+const Stripe = styled.div`
+position: absolute;
+z-index: -2;
+margin-top: -29%;
+margin-left: 10%;
+img{
+    width: 7%;
+    height: 20vh;
+}
+`
+const Stripe2 = styled.div`
+    position: absolute;
+    z-index: -2;
+    margin-top: -29%;
+    margin-left: 7%;
+    img{
+        width: 7%;
+        height: 20vh;
+    }
+`
 
 const Wrapper = styled.div`
     margin-left: -5%;
@@ -270,6 +319,9 @@ const Wrapper2 = styled.div`
         src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'); 
         font-weight: normal; 
         font-style: normal; 
+    }
+    @media only screen and (max-width: 600px) {
+        display: none;
     }
 
     @font-face { 

@@ -14,6 +14,9 @@ const Logo = styled.div`
      font-family: VALORANT Regular;
      font-size: 40px;
      margin-left: -8.4%;
+     @media only screen and (max-width: 600px) {
+        margin-left: 25%;
+    }
 
      :hover {
          color: red;
