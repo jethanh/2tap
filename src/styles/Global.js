@@ -49,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
 
   @font-face {
     font-family: 'VALORANT Regular';
-    src: url('/css/VALORANT.eot') format('embedded-opentype');
+    src: url('public/css/VALORANT.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }

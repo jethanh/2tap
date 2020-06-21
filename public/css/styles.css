@@ -1,13 +1,12 @@
-
 @font-face {
   font-family: 'VALORANT';
-  src: url('/css/VALORANT.eot') format('embedded-opentype');
+  src: url('public/css/VALORANT.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'VALORANT';
+  font-family: 'VALORANT Regular';
   src:  url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAACIgABIAAAAAVIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAiGAAAAAgA
 AAAIAAAAAUdERUYAAB8AAAAAIgAAACIAzAERR1BPUwAAHyQAAAJoAAAFbp1tqjdHU1VCAAAhjAAA
 AIwAAADekaaRdU9TLzIAAAIMAAAARgAAAGAwaMzEY21hcAAAAzwAAAESAAAC6jMNOFhjdnQgAAAF
@@ -165,5 +164,3 @@ MDAxsDHwMIQDaVEw6QMViQCLRIBFmIH6+IBmRgN5sgwxQFKOIQpImkLVRoLVRhJQywi0lwUoIwpk
   font-weight: normal;
   font-style: normal;
 }
-
-
