@@ -7,7 +7,7 @@ const Landing = () => {
     const [news, setNews] = useState([]);
 
     const fetchNews = () => {
-            axios.get('http://newsapi.org/v2/everything?q=valorant&language=en&pageSize=9&from=2020-05-21&sortBy=publishedAt&apiKey=f36ea9dacbad4172adfd0362de6ce7bf')
+            axios.get('http://newsapi.org/v2/everything?q=valorant&language=en&pageSize=20&from=2020-05-21&sortBy=publishedAt&apiKey=f36ea9dacbad4172adfd0362de6ce7bf')
             .then(ress => {
                 setNews(ress.data.articles)
             })
@@ -49,9 +49,6 @@ console.log(news)
             </Reyna>
         </Wrapper>
         <Wrapper2>
-            <Disclaimer>
-                © 2020 2tap.gg. 2tap.gg isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing VALORANT. VALORANT and Riot Games are trademarks or registered trademarks of Riot Games, Inc. VALORANT © Riot Games, Inc.
-            </Disclaimer>
             <NewsHeader>
                 VALORaNT //         NEWS //
             </NewsHeader>
@@ -71,28 +68,53 @@ console.log(news)
                 </NewsWrapper>
             </NewsBorder>
         </Wrapper2>
+        <Disclaimer>
+                © 2020 2tap.gg. 2tap.gg isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing VALORANT. VALORANT and Riot Games are trademarks or registered trademarks of Riot Games, Inc. VALORANT © Riot Games, Inc.
+        </Disclaimer>
         </>
     )
 }
 
 const NewsWrapper = styled.div`
-    width: 97%;
+    width: 77%;
     height: 90vh;
-    border-left: 1px solid white;
-    border-top: 1px solid white;
-    margin-left: 10%;
-    margin-top: -1%;
+    margin-left: 20%;
     font-family: Calibri;
-    padding: 2%;
     display: flex;
     flex-direction: column;
-    padding-left: 7%;
-    padding-top: 4%;
+    text-align: right;
+    margin-top: 1%;
+    padding-top: 1%;
+    overflow-y: scroll;
+    padding-right: 5%;
+
+    /* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2d3436; 
+}
+
         h3 {
-            font-size: 24px;
+            font-size: 20px;
             color: white;
             font-family: VALORANT Regular;
-            width: 100%;
+            width: 130%;
+            text-align: justify;
                 a {
                     text-decoration: none;
                     color: white;
@@ -102,13 +124,18 @@ const NewsWrapper = styled.div`
                 }
         }
         p {
+            width: 130%;
             font-size: 12px;
-            padding-left: 2%;
+            text-align: left;
         }
         .desc{
+            width: 130%;
             color: white;
             margin-bottom: 20px;
             font-size: 15px;
+            text-align: left;
+            border-bottom: 1px solid red;
+            padding-bottom: 2%;
         }
 `
 
@@ -189,8 +216,8 @@ const Jett = styled.div`
     display: flex;
     align-items: center;
     position: absolute;
-    margin-left: 7%;
-    top: 7%;
+    margin-left: 11%;
+    top: 9%;
     z-index: -1;
     `
 
@@ -198,7 +225,7 @@ const Reyna = styled.div`
     display: flex;
     align-items: center;
     position: absolute;
-    margin-left: 70%;
+    margin-left: 65%;
     top: 4%;
     z-index: -1;
     `
@@ -217,7 +244,7 @@ const Wrapper2 = styled.div`
     z-index: -2;
     position: absolute;
     color: #fa143e;
-    height: 130vh;
+    height: 140vh;
     padding-top: 0.5%;
 `
 
@@ -225,34 +252,32 @@ const NewsHeader = styled.div`
 font-size: 72px;
 font-family: VALORANT Regular;
 color: white;
-margin-left: 47%;
+margin-left: 10.5%;
 letter-spacing: -7.7px;
 border-bottom: 1px solid #fa143e;
 width: 21%;
 height: 4.9vh;
 line-height: 70%;
 display: flex;
-margin-top: -6.9%;
 `
 
 const NewsBorder = styled.div`
     height: 110vh;
-    width: 70%;
-    margin-left: 20%;
-    margin-top: 2%;
-    border-right 1px solid #fa143e;
-    padding-top: 3%;
+    width: 35%;
+    border-right: 1px solid white;
+    padding-top: 2.5%;
 `
 
 const Disclaimer = styled.div`
     font-size: 10px;
     color: white;
-    width: 12.5%;
+    width: 64%;
     display: flex;
-    margin-left: 31.7%;
+    margin-left: 33%;
     line-height: 16px;
     text-align: justify;
     height: 14vh;
+    padding-top: 1%;
 `
 
 export default Landing
