@@ -118,12 +118,12 @@ const NewsWrapper = styled.div`
         h3 {
             font-size: 20px;
             color: white;
-            font-family: VALORANT Regular;
             width: 130%;
             text-align: justify;
             @font-face {
-                font-family: 'VALORANT'; 
-                src: url('public/css/VALORANT.eot') format('embedded-opentype');
+                font-family: 'VALORANT Regular'; 
+                src: url('src/Landing/VALORANT.eot') format('embedded-opentype'), 
+                url('src/Landing/VALORANT.woff') format ('opentype');
                 font-weight: normal;
                 font-style: normal;
               }
@@ -158,10 +158,10 @@ const Form = styled.form`
     `;
 const Header = styled.h1`
     font-size: 120px;
-    font-family: VALORANT Regular;
     @font-face {
-        font-family: 'VALORANT'; 
-        src: url('public/css/VALORANT.eot') format('embedded-opentype');
+        font-family: 'VALORANT Regular'; 
+        src: url('src/Landing/VALORANT.eot') format('embedded-opentype'), 
+        url('src/Landing/VALORANT.woff') format ('opentype');
         font-weight: normal;
         font-style: normal;
       }
@@ -206,10 +206,10 @@ const Wrap = styled.div`
     font-size: 20px;
     display: flex;
     align-items: center;
-    font-family: VALORANT Regular;
     @font-face {
-        font-family: 'VALORANT'; 
-        src: url('public/css/VALORANT.eot') format('embedded-opentype');
+        font-family: 'VALORANT Regular'; 
+        src: url('src/Landing/VALORANT.eot') format('embedded-opentype'), 
+        url('src/Landing/VALORANT.woff') format ('opentype');
         font-weight: normal;
         font-style: normal;
       }
@@ -262,10 +262,10 @@ const Wrapper = styled.div`
 
 const Wrapper2 = styled.div`
     margin-top: 1%;
-    font-family: VALORANT Regular;
     @font-face {
-        font-family: 'VALORANT'; 
-        src: url('public/css/VALORANT.eot') format('embedded-opentype');
+        font-family: 'VALORANT Regular'; 
+        src: url('src/Landing/VALORANT.eot') format('embedded-opentype'), 
+        url('src/Landing/VALORANT.woff') format ('opentype');
         font-weight: normal;
         font-style: normal;
       }
@@ -280,11 +280,10 @@ const Wrapper2 = styled.div`
 
 const NewsHeader = styled.div`
 font-size: 72px;
-font-family: VALORANT Regular;
 @font-face {
     font-family: 'VALORANT Regular'; 
-    src: url('VALORANT.eot') format('embedded-opentype'),
-    url('VALORANT.woff') format ('opentype');
+    src: url('src/Landing/VALORANT.eot') format('embedded-opentype'), 
+    url('src/Landing/VALORANT.woff') format ('opentype');
     font-weight: normal;
     font-style: normal;
   }
