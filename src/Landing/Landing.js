@@ -7,7 +7,7 @@ const Landing = () => {
     const [news, setNews] = useState([]);
 
     const fetchNews = () => {
-            axios.get('http://newsapi.org/v2/everything?q=valorant&language=en&pageSize=20&from=2020-05-21&sortBy=publishedAt&apiKey=f36ea9dacbad4172adfd0362de6ce7bf')
+            axios.get('https://newsapi.org/v2/everything?q=valorant&language=en&pageSize=20&from=2020-05-21&sortBy=publishedAt&apiKey=f36ea9dacbad4172adfd0362de6ce7bf')
             .then(ress => {
                 setNews(ress.data.articles)
             })
