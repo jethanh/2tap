@@ -8,7 +8,7 @@ const Landing = () => {
     const [news, setNews] = useState([]);
 
     const fetchNews = async () => {
-        const url = 'http://newsapi.org/v2/everything?' +
+        const url = 'https://newsapi.org/v2/everything?' +
         'q=valorant&' +
         'from=2020-05-21&' +
         'sortBy=popularity&language=en&' +
