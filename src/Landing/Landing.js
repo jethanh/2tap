@@ -7,7 +7,7 @@ const Landing = () => {
     const [news, setNews] = useState([]);
 
     const fetchNews = () => {
-            axios.get('https://newsapi.org/v2/everything?q=valorant&language=en&pageSize=20&from=2020-05-21&sortBy=publishedAt&apiKey=f36ea9dacbad4172adfd0362de6ce7bf')
+            axios.get('https://newsapi.org/v2/everything?q=valorant&language=en&apiKey=f36ea9dacbad4172adfd0362de6ce7bf')
             .then(ress => {
                 setNews(ress.data.articles)
             })
@@ -269,15 +269,14 @@ const NewsBorder = styled.div`
 `
 
 const Disclaimer = styled.div`
-    font-size: 10px;
+    font-size: 9.5px;
     color: white;
-    width: 64%;
+    width: 67%;
     display: flex;
     margin-left: 33%;
-    line-height: 16px;
-    text-align: justify;
+    text-align: left;
     height: 14vh;
-    padding-top: 1%;
+    padding-top: 1.2%;
 `
 
 export default Landing
