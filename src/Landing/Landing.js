@@ -12,7 +12,7 @@ const Landing = () => {
         'q=valorant&' +
         'from=2020-05-21&' +
         'sortBy=popularity&language=en&' +
-        'apiKey=f36ea9dacbad4172adfd0362de6ce7bf';
+        'apiKey=8ca129a4cb8845a2b1b5792d79b02f6b';
     
             await axios.get(url)
             .then(ress => {
