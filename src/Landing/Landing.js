@@ -121,12 +121,13 @@ const NewsWrapper = styled.div`
             width: 130%;
             text-align: justify;
             @font-face {
-                font-family: 'VALORANT Regular'; 
-                src: url('src/Landing/VALORANT.eot') format('embedded-opentype'), 
-                url('src/Landing/VALORANT.woff') format ('opentype');
+                font-family: 'VALORANT'; 
+                src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
+                url('./src/Landing/VALORANT.woff') format ('opentype');
                 font-weight: normal;
                 font-style: normal;
               }
+              font-family: Valorant;
                 a {
                     text-decoration: none;
                     color: white;
@@ -159,12 +160,13 @@ const Form = styled.form`
 const Header = styled.h1`
     font-size: 120px;
     @font-face {
-        font-family: 'VALORANT Regular'; 
-        src: url('src/Landing/VALORANT.eot') format('embedded-opentype'), 
-        url('src/Landing/VALORANT.woff') format ('opentype');
+        font-family: 'VALORANT'; 
+        src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
+        url('./src/Landing/VALORANT.woff') format ('opentype');
         font-weight: normal;
         font-style: normal;
       }
+      font-family: Valorant;
     padding-top: 1.5%;
     width: 100%;
     margin-top: 15%;
@@ -207,12 +209,13 @@ const Wrap = styled.div`
     display: flex;
     align-items: center;
     @font-face {
-        font-family: 'VALORANT Regular'; 
-        src: url('src/Landing/VALORANT.eot') format('embedded-opentype'), 
-        url('src/Landing/VALORANT.woff') format ('opentype');
+        font-family: 'VALORANT'; 
+        src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
+        url('./src/Landing/VALORANT.woff') format ('opentype');
         font-weight: normal;
         font-style: normal;
       }
+      font-family: Valorant;
     `
 
 const Button = styled.button`
@@ -263,12 +266,13 @@ const Wrapper = styled.div`
 const Wrapper2 = styled.div`
     margin-top: 1%;
     @font-face {
-        font-family: 'VALORANT Regular'; 
-        src: url('src/Landing/VALORANT.eot') format('embedded-opentype'), 
-        url('src/Landing/VALORANT.woff') format ('opentype');
+        font-family: 'VALORANT'; 
+        src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
+        url('./src/Landing/VALORANT.woff') format ('opentype');
         font-weight: normal;
         font-style: normal;
       }
+      font-family: Valorant;
     width: 100%;
     background-color: #2d3436;
     z-index: -2;
@@ -281,13 +285,13 @@ const Wrapper2 = styled.div`
 const NewsHeader = styled.div`
 font-size: 72px;
 @font-face {
-    font-family: 'VALORANT Regular'; 
-    src: url('src/Landing/VALORANT.eot') format('embedded-opentype'), 
-    url('src/Landing/VALORANT.woff') format ('opentype');
+    font-family: 'VALORANT'; 
+    src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
+    url('./src/Landing/VALORANT.woff') format ('opentype');
     font-weight: normal;
     font-style: normal;
   }
-
+  font-family: Valorant;
 color: white;
 margin-left: 10.5%;
 letter-spacing: -7.7px;
