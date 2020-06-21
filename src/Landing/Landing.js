@@ -54,6 +54,9 @@ console.log(news)
             <Stripe2>
                 <img src="https://i.ya-webdesign.com/images/stripes-transparent-red-4.gif" alt="Valorant Red Stripe"/>
             </Stripe2>
+        <Disclaimer className="font">
+                     © 2020 2tap.gg. 2tap.gg isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing VALORANT. VALORANT and Riot Games are trademarks or registered trademarks of Riot Games, Inc. VALORANT © Riot Games, Inc.
+        </Disclaimer>
             <Jett>
                 <img src="https://vignette.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png/revision/latest?cb=20200602020209" alt="Valorant Jett"/>
             </Jett>
@@ -81,9 +84,6 @@ console.log(news)
                 </NewsWrapper>
             </NewsBorder>
         </Wrapper2>
-        <Disclaimer>
-                © 2020 2tap.gg. 2tap.gg isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing VALORANT. VALORANT and Riot Games are trademarks or registered trademarks of Riot Games, Inc. VALORANT © Riot Games, Inc.
-        </Disclaimer>
         </>
     )
 }
@@ -313,7 +313,7 @@ const Wrapper = styled.div`
 `
 
 const Wrapper2 = styled.div`
-    margin-top: 1%;
+    margin-top: 11.77%;
     @font-face { 
         font-family: 'VALORANT'; 
         src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'); 
@@ -377,15 +377,15 @@ const NewsBorder = styled.div`
     padding-top: 2.5%;
 `
 
-const Disclaimer = styled.div`
-    font-size: 9.5px;
-    color: white;
-    width: 67%;
-    display: flex;
-    margin-left: 33%;
+const Disclaimer = styled.p`
+    font-size: 10px;
+    color: black;
+    width: 1%;
+    margin-left: 0.4%;
     text-align: left;
     height: 14vh;
-    padding-top: 1.2%;
+    margin-left: 5%;
+    margin-top: -22.5%;
 `
 
 export default Landing
