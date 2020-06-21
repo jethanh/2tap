@@ -121,6 +121,12 @@ const NewsWrapper = styled.div`
             font-family: VALORANT Regular;
             width: 130%;
             text-align: justify;
+            @font-face {
+                font-family: 'VALORANT'; 
+                src: url('public/css/VALORANT.eot') format('embedded-opentype');
+                font-weight: normal;
+                font-style: normal;
+              }
                 a {
                     text-decoration: none;
                     color: white;
@@ -153,6 +159,12 @@ const Form = styled.form`
 const Header = styled.h1`
     font-size: 120px;
     font-family: VALORANT Regular;
+    @font-face {
+        font-family: 'VALORANT'; 
+        src: url('public/css/VALORANT.eot') format('embedded-opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
     padding-top: 1.5%;
     width: 100%;
     margin-top: 15%;
@@ -195,6 +207,12 @@ const Wrap = styled.div`
     display: flex;
     align-items: center;
     font-family: VALORANT Regular;
+    @font-face {
+        font-family: 'VALORANT'; 
+        src: url('public/css/VALORANT.eot') format('embedded-opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
     `
 
 const Button = styled.button`
@@ -245,6 +263,12 @@ const Wrapper = styled.div`
 const Wrapper2 = styled.div`
     margin-top: 1%;
     font-family: VALORANT Regular;
+    @font-face {
+        font-family: 'VALORANT'; 
+        src: url('public/css/VALORANT.eot') format('embedded-opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
     width: 100%;
     background-color: #2d3436;
     z-index: -2;
@@ -257,6 +281,12 @@ const Wrapper2 = styled.div`
 const NewsHeader = styled.div`
 font-size: 72px;
 font-family: VALORANT Regular;
+@font-face {
+    font-family: 'VALORANT'; 
+    src: url('public/css/VALORANT.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
 color: white;
 margin-left: 10.5%;
 letter-spacing: -7.7px;
