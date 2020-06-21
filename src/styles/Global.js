@@ -2,7 +2,13 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');;
+@font-face {
+  font-family: 'VALORANT'; 
+  src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
+  url('./src/Landing/VALORANT.woff') format ('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
   *,
   *::after,
