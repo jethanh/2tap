@@ -92,7 +92,7 @@ console.log(news)
 
 const StripeSmall = styled.div`
     height 73.9vh;
-    margin-left: -37%;
+    margin-left: -36.83%;
     margin-top: 13.7%;
     z-index: -2;
     position: absolute;
@@ -204,19 +204,23 @@ width: 50%;
 `
 
 const Input = styled.input`
-    font-size: 20px;
+    font-family: Calibri;
+    font-size: 15px;
     width: 30%;
     height: 40px;
     margin-right: 7px;
     background-color: rgb(242, 249, 255);
     border: 1px solid black;
-    padding: 7px;
+    padding-left: 7px;
+    padding-bottom: 2px;
+    color: black;
     @media only screen and (max-width: 600px) {
         width: 100%;
     }
 
     ::placeholder{
         font-size: 12px;
+        font-family: Calibri;
     }
     
 
@@ -233,6 +237,7 @@ const LilInput = styled.input`
     background-color: rgb(242, 249, 255);
     border: 1px solid black;
     padding: 7px;
+    padding-bottom: 11.5px;
 
 
     ::placeholder{
