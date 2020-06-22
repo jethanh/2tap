@@ -4,6 +4,10 @@
     font-weight: normal;
     src: local('VALORANT Regular'), url('./styles/Valorant Font.woff') format('woff');
     }
+    test {
+        color: rgb(255, 217, 94)
+    }
+    
 
     .font {
         font-family: 'boing'

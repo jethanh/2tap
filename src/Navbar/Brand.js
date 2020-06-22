@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from "styled-components";
+import '../App.css'
+
 
 const Brand = () => {
     return (
-        <Logo>2TAP</Logo>
+        <Logo className="font">2TAP</Logo>
     )
 }
 export default Brand
