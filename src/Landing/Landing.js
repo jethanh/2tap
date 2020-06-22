@@ -44,6 +44,7 @@ console.log(news)
             <Form>
                 <HeadWrap>
                     <Header className="font">2TAP.GG</Header>
+                    <Header2 className="font">二 タップ</Header2>
                 </HeadWrap>
                 <Wrap className="font">
                     <Input placeholder="暴動   |   RIOT   |   दंगा   |   شورش" type="text" id="riotid" name="riotid"/>
@@ -168,7 +169,7 @@ const StripeSmall = styled.div`
 // `
 
 const Form = styled.form`
-    margin-top: 13%;
+    margin-top: 15%;
     margin-left: 40%;
     width: 60%;
     @media only screen and (max-width: 600px) {
@@ -177,12 +178,20 @@ const Form = styled.form`
     `;
 const Header = styled.h1`
     font-size: 120px;
+    width: 100%;
+    margin-top: -5%;
+    margin-bottom: 5.5%;
+    
+`
+const Header2 = styled.h1`
+    font-size: 120px;
     padding-top: 1.5%;
     width: 100%;
-    margin-top: 15%;
+    margin-top: -51%;
     margin-bottom: -5%;
     
 `
+
 const HeadWrap = styled.div`
 width: 50%;
 `
@@ -235,7 +244,7 @@ const Wrap = styled.div`
     font-size: 20px;
     display: flex;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 11%;
     @media only screen and (max-width: 600px) {
         width: 140%;
         
