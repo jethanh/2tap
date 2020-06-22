@@ -46,9 +46,9 @@ console.log(news)
                     <Header className="font">2TAP.GG</Header>
                 </HeadWrap>
                 <Wrap className="font">
-                    <Input type="text" id="riotid" name="riotid"/>
+                    <Input placeholder="暴動   |   RIOT   |   दंगा   |   شورش" type="text" id="riotid" name="riotid"/>
                     {'>'}
-                    <LilInput type="text" id="tag" name="tag"/>
+                    <LilInput type="text" id="tag" name="tag" placeholder="#"/>
                     <Button>TAP</Button>
                 </Wrap>
             </Form>
@@ -196,6 +196,10 @@ const Input = styled.input`
     @media only screen and (max-width: 600px) {
         width: 100%;
     }
+
+    ::placeholder{
+        font-size: 12px;
+    }
     
 
     :focus {
@@ -211,6 +215,11 @@ const LilInput = styled.input`
     background-color: rgb(242, 249, 255);
     border: 1px solid black;
     padding: 7px;
+
+
+    ::placeholder{
+        font-size: 12px;
+    }
     @media only screen and (max-width: 600px) {
         width: 30%;
         
