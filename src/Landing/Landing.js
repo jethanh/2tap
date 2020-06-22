@@ -37,10 +37,10 @@ console.log(news)
     return (
         <>
 
-        <Wrapper>
+        <Wrapper className="trim">
         <StripeSmall>
                 <img src="https://cdn.discordapp.com/attachments/245032785872551937/724439050676863076/clipart-5-21-21-21-44_1.png" alt="Red Stripe"/>
-            </StripeSmall>
+        </StripeSmall>
             <Form>
                 <HeadWrap>
                     <Header className="font">2TAP.GG</Header>
@@ -62,7 +62,7 @@ console.log(news)
                 <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6577b1f58530e6b2/5eb7cdc121a5027d77420208/V_AGENTS_587x900_Reyna.png" alt="Valorant Reyna"/>
             </Reyna>
         </Wrapper>
-        <Wrapper2>
+        {/* <Wrapper2>
             <NewsHeader className="font">
                 VAlorant //         NEWS //
             </NewsHeader>
@@ -81,16 +81,18 @@ console.log(news)
             }
                 </NewsWrapper>
             </NewsBorder>
-        </Wrapper2>
+        </Wrapper2> */}
         </>
     )
 }
 
 const StripeSmall = styled.div`
-    height 5vh;
+    height 73.9vh;
     margin-left: -37%;
+    margin-top: 13.7%;
     z-index: -2;
     position: absolute;
+    overflow: hidden;
     
 `
 
@@ -298,7 +300,6 @@ const Reyna = styled.div`
 const Wrapper = styled.div`
     margin-left: -5%;
     font-size: 50px;
-    margin-bottom: 25%;  
 `
 
 const Wrapper2 = styled.div`

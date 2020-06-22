@@ -8,3 +8,6 @@
     .font {
         font-family: 'boing'
     }
+    .trim {
+        overflow: hidden;
+    }
