@@ -43,7 +43,7 @@ console.log(news)
         </StripeSmall>
             <Form>
                 <HeadWrap>
-                    <Header className="font">2TAP.GG</Header>
+                    <Header className="font">2TAP<span>.</span>GG</Header>
                     <Header2 className="font">二 タップ</Header2>
                 </HeadWrap>
                 <Wrap className="font">
@@ -52,6 +52,9 @@ console.log(news)
                     <LilInput type="text" id="tag" name="tag" placeholder="#"/>
                     <Button>TAP</Button>
                 </Wrap>
+                <HeadWrap>
+                    
+                </HeadWrap>
             </Form>
         <Disclaimer className="font">
                      © 2020 2tap.gg. 2tap.gg isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing VALORANT. VALORANT and Riot Games are trademarks or registered trademarks of Riot Games, Inc. VALORANT © Riot Games, Inc.
@@ -179,8 +182,11 @@ const Form = styled.form`
 const Header = styled.h1`
     font-size: 120px;
     width: 100%;
-    margin-top: -5%;
+    margin-top: -5.5%;
     margin-bottom: 5.5%;
+    span {
+        color: rgb(255, 217, 94);
+    }
     
 `
 const Header2 = styled.h1`
@@ -189,6 +195,7 @@ const Header2 = styled.h1`
     width: 100%;
     margin-top: -51%;
     margin-bottom: -5%;
+    color: #00cc99;
     
 `
 
@@ -200,7 +207,7 @@ const Input = styled.input`
     font-size: 20px;
     width: 30%;
     height: 40px;
-    margin-right: 1%;
+    margin-right: 7px;
     background-color: rgb(242, 249, 255);
     border: 1px solid black;
     padding: 7px;
@@ -222,7 +229,7 @@ const LilInput = styled.input`
     font-size: 20px;
     width: 6%;
     height: 40px;
-    margin-left: 10px;
+    margin-left: 7px;
     background-color: rgb(242, 249, 255);
     border: 1px solid black;
     padding: 7px;
@@ -269,15 +276,15 @@ const Wrap = styled.div`
 
 const Button = styled.button`
     /* Adapt the colors based on primary prop */
-    background: rgb(156, 219, 255);
+    background: #6699ff;
     color: white;
     height: 40px;
     width: 60px;
-    margin-left: 1%;
+    margin-left: 0.5%;
   
     font-size: 10px;
     padding: 0.25em 1em;
-    border: 2px solid rgb(156, 219, 255);
+    border: 2px solid #6699ff;
     border-radius: 3px;
   `;
 
