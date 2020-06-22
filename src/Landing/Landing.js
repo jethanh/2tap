@@ -96,76 +96,76 @@ const StripeSmall = styled.div`
     
 `
 
-const NewsWrapper = styled.div`
-    width: 77%;
-    height: 90vh;
-    margin-left: 20%;
-    font-family: Calibri;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    margin-top: 1%;
-    padding-top: 1%;
-    overflow-y: scroll;
-    padding-right: 5%;
+// const NewsWrapper = styled.div`
+//     width: 77%;
+//     height: 90vh;
+//     margin-left: 20%;
+//     font-family: Calibri;
+//     display: flex;
+//     flex-direction: column;
+//     text-align: right;
+//     margin-top: 1%;
+//     padding-top: 1%;
+//     overflow-y: scroll;
+//     padding-right: 5%;
 
-    /* width */
-::-webkit-scrollbar {
-  width: 1px;
-}
+//     /* width */
+// ::-webkit-scrollbar {
+//   width: 1px;
+// }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   box-shadow: inset 0 0 5px grey; 
+//   border-radius: 10px;
+// }
  
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: red; 
-}
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: red; 
+// }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #2d3436; 
-}
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #2d3436; 
+// }
 
-        h3 {
-            font-size: 20px;
-            color: white;
-            width: 130%;
-            text-align: justify;
-            @font-face {
-                font-family: 'VALORANT'; 
-                src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
-                url('./src/Landing/VALORANT.woff') format ('opentype');
-                font-weight: normal;
-                font-style: normal;
-              }
-              font-family: Valorant;
-                a {
-                    text-decoration: none;
-                    color: white;
-                }
-                a:hover {
-                    color: #fa143e;
-                }
-        }
-        p {
-            width: 130%;
-            font-size: 12px;
-            text-align: left;
-        }
-        .desc{
-            width: 130%;
-            color: white;
-            margin-bottom: 20px;
-            font-size: 15px;
-            text-align: left;
-            border-bottom: 1px solid red;
-            padding-bottom: 2%;
-        }
-`
+//         h3 {
+//             font-size: 20px;
+//             color: white;
+//             width: 130%;
+//             text-align: justify;
+//             @font-face {
+//                 font-family: 'VALORANT'; 
+//                 src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'), 
+//                 url('./src/Landing/VALORANT.woff') format ('opentype');
+//                 font-weight: normal;
+//                 font-style: normal;
+//               }
+//               font-family: Valorant;
+//                 a {
+//                     text-decoration: none;
+//                     color: white;
+//                 }
+//                 a:hover {
+//                     color: #fa143e;
+//                 }
+//         }
+//         p {
+//             width: 130%;
+//             font-size: 12px;
+//             text-align: left;
+//         }
+//         .desc{
+//             width: 130%;
+//             color: white;
+//             margin-bottom: 20px;
+//             font-size: 15px;
+//             text-align: left;
+//             border-bottom: 1px solid red;
+//             padding-bottom: 2%;
+//         }
+// `
 
 const Form = styled.form`
     margin-top: 13%;
@@ -302,70 +302,70 @@ const Wrapper = styled.div`
     font-size: 50px;
 `
 
-const Wrapper2 = styled.div`
-    margin-top: 1%;
-    @font-face { 
-        font-family: 'VALORANT'; 
-        src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'); 
-        font-weight: normal; 
-        font-style: normal; 
-    }
-    @media only screen and (max-width: 600px) {
-        display: none;
-    }
+// const Wrapper2 = styled.div`
+//     margin-top: 1%;
+//     @font-face { 
+//         font-family: 'VALORANT'; 
+//         src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'); 
+//         font-weight: normal; 
+//         font-style: normal; 
+//     }
+//     @media only screen and (max-width: 600px) {
+//         display: none;
+//     }
 
-    @font-face { 
-    font-family: 'VALORANT'; 
-    src: url('./src/Landing/VALORANT.woff') format('woff');
-    url('./src/Landing/VALORANT.ttf') format('truetype'), 
-    url('./src/Landing/VALORANT.svg#VALORANT') format('svg');
-    font-weight: normal; 
-    font-style: normal; 
-}
+//     @font-face { 
+//     font-family: 'VALORANT'; 
+//     src: url('./src/Landing/VALORANT.woff') format('woff');
+//     url('./src/Landing/VALORANT.ttf') format('truetype'), 
+//     url('./src/Landing/VALORANT.svg#VALORANT') format('svg');
+//     font-weight: normal; 
+//     font-style: normal; 
+// }
     
-    width: 100%;
-    background-color: #2d3436;
-    z-index: -2;
-    position: absolute;
-    color: #fa143e;
-    height: 140vh;
-    padding-top: 0.5%;
-`
+//     width: 100%;
+//     background-color: #2d3436;
+//     z-index: -2;
+//     position: absolute;
+//     color: #fa143e;
+//     height: 140vh;
+//     padding-top: 0.5%;
+// `
 
-const NewsHeader = styled.div`
-font-size: 72px;
-@font-face { 
-    font-family: 'VALORANT'; 
-    src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'); 
-    font-weight: normal; 
-    font-style: normal; 
-}
+// const NewsHeader = styled.div`
+// font-size: 72px;
+// @font-face { 
+//     font-family: 'VALORANT'; 
+//     src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'); 
+//     font-weight: normal; 
+//     font-style: normal; 
+// }
 
-@font-face { 
-font-family: 'VALORANT'; 
-src: url('./src/Landing/VALORANT.woff') format('woff');
-url('./src/Landing/VALORANT.ttf') format('truetype'), 
-url('./src/Landing/VALORANT.svg#VALORANT') format('svg');
-font-weight: normal; 
-font-style: normal; 
-}
+// @font-face { 
+// font-family: 'VALORANT'; 
+// src: url('./src/Landing/VALORANT.woff') format('woff');
+// url('./src/Landing/VALORANT.ttf') format('truetype'), 
+// url('./src/Landing/VALORANT.svg#VALORANT') format('svg');
+// font-weight: normal; 
+// font-style: normal; 
+// }
 
-color: white;
-margin-left: 10.5%;
-letter-spacing: -7.7px;
-border-bottom: 1px solid #fa143e;
-width: 21%;
-height: 4.9vh;
-line-height: 70%;
-display: flex;
-`
+// color: white;
+// margin-left: 10.5%;
+// letter-spacing: -7.7px;
+// border-bottom: 1px solid #fa143e;
+// width: 21%;
+// height: 4.9vh;
+// line-height: 70%;
+// display: flex;
+// `
 
-const NewsBorder = styled.div`
-    height: 110vh;
-    width: 35%;
-    border-right: 1px solid white;
-    padding-top: 2.5%;
-`
+// const NewsBorder = styled.div`
+//     height: 110vh;
+//     width: 35%;
+//     border-right: 1px solid white;
+//     padding-top: 2.5%;
+// `
 
 const Disclaimer = styled.p`
     font-size: 8px;
