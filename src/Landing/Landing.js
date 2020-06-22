@@ -3,6 +3,7 @@ import styled from "styled-components";
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import '../App.css'
+import './betterline.png'
 
 const Landing = () => {
     const [news, setNews] = useState([]);
@@ -35,12 +36,15 @@ console.log(news)
     
     return (
         <>
+
         <Wrapper>
+        <StripeSmall>
+                <img src="https://cdn.discordapp.com/attachments/245032785872551937/724439050676863076/clipart-5-21-21-21-44_1.png" alt="Red Stripe"/>
+            </StripeSmall>
             <Form>
                 <HeadWrap>
                     <Header className="font">2TAP.GG</Header>
                 </HeadWrap>
-                <Label htmlFor="riotid" className="font">Enter a Riot ID:</Label><br/>
                 <Wrap className="font">
                     <Input type="text" id="riotid" name="riotid"/>
                     {'>'}
@@ -48,12 +52,6 @@ console.log(news)
                     <Button>TAP</Button>
                 </Wrap>
             </Form>
-            <Stripe>
-                <img src="https://i.ya-webdesign.com/images/stripes-transparent-red-4.gif" alt="Valorant Red Stripe"/>
-            </Stripe>
-            <Stripe2>
-                <img src="https://i.ya-webdesign.com/images/stripes-transparent-red-4.gif" alt="Valorant Red Stripe"/>
-            </Stripe2>
         <Disclaimer className="font">
                      © 2020 2tap.gg. 2tap.gg isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing VALORANT. VALORANT and Riot Games are trademarks or registered trademarks of Riot Games, Inc. VALORANT © Riot Games, Inc.
         </Disclaimer>
@@ -87,6 +85,14 @@ console.log(news)
         </>
     )
 }
+
+const StripeSmall = styled.div`
+    height 5vh;
+    margin-left: -37%;
+    z-index: -2;
+    position: absolute;
+    
+`
 
 const NewsWrapper = styled.div`
     width: 77%;
@@ -160,7 +166,7 @@ const NewsWrapper = styled.div`
 `
 
 const Form = styled.form`
-    margin-top: 15%;
+    margin-top: 13%;
     margin-left: 40%;
     width: 60%;
     @media only screen and (max-width: 600px) {
@@ -218,6 +224,7 @@ const Wrap = styled.div`
     font-size: 20px;
     display: flex;
     align-items: center;
+    margin-top: 5%;
     @media only screen and (max-width: 600px) {
         width: 140%;
         
@@ -254,12 +261,6 @@ const Button = styled.button`
     border-radius: 3px;
   `;
 
-const Label = styled.label`
-  font-size: 15px;
-  font-family: VALORANT Regular;
-  font-weight: bold;
-  
-  `
 
 const Jett = styled.div`
     display: flex;
@@ -283,27 +284,6 @@ const Reyna = styled.div`
     @media only screen and (max-width: 600px) {
         display: none;
     }
-    `
-
-const Stripe = styled.div`
-position: absolute;
-z-index: -2;
-margin-top: -29%;
-margin-left: 10%;
-img{
-    width: 7%;
-    height: 20vh;
-}
-`
-const Stripe2 = styled.div`
-    position: absolute;
-    z-index: -2;
-    margin-top: -29%;
-    margin-left: 7%;
-    img{
-        width: 7%;
-        height: 20vh;
-    }
 `
 
 const Wrapper = styled.div`
@@ -313,7 +293,7 @@ const Wrapper = styled.div`
 `
 
 const Wrapper2 = styled.div`
-    margin-top: 11.77%;
+    margin-top: 1%;
     @font-face { 
         font-family: 'VALORANT'; 
         src: url('./src/Landing/VALORANT.eot') format('embedded-opentype'); 
@@ -378,14 +358,15 @@ const NewsBorder = styled.div`
 `
 
 const Disclaimer = styled.p`
-    font-size: 10px;
+    font-size: 8px;
     color: black;
     width: 1%;
     margin-left: 0.4%;
-    text-align: left;
+    text-align: justify;
     height: 14vh;
-    margin-left: 5%;
-    margin-top: -22.5%;
+    margin-left: 46.8%;
+    margin-top: -4.5%;
+    width: 19%;
 `
 
 export default Landing
