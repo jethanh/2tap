@@ -15,3 +15,7 @@
     .trim {
         overflow: hidden;
     }
+    .column {
+        display: flex;
+        flex-direction: column;
+    }

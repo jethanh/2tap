@@ -7,11 +7,11 @@ import GlobalStyle from './styles/Global';
 function App () {
 
     return (
-      <>
+      <div className="column">
         <Navbar/>
         <Landing/>
         <GlobalStyle />
-      </>
+      </div>
     )
   }
 

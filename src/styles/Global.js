@@ -38,20 +38,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
   }
-
-
-  .nList {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-  }
-
-
-
-
   
-  
-
 `;
 
 export default GlobalStyles;

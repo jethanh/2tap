@@ -13,7 +13,6 @@ export default Brand
 const Logo = styled.div`
      margin: auto 0;
      color: white;
-     font-family: VALORANT Regular;
      font-size: 40px;
      margin-left: -8.4%;
      @media only screen and (max-width: 600px) {
