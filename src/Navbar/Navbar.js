@@ -14,9 +14,7 @@ const Navbar = (props) => {
   return (
     <>
       <NavBar style={barAnimation}>
-        <FlexContainer>
           <Brand  />
-        </FlexContainer>
       </NavBar>
    </>
   )
@@ -32,13 +30,4 @@ const NavBar = styled(animated.nav)`
   background: #2d3436;
   z-index: 1;
   font-size: 1.4rem;
-`;
-
-const FlexContainer = styled.div`
-  max-width: 120rem;
-  display: flex;
-  margin: auto;
-  padding: 0 2rem;
-  margin-left: 19%;
-  height: 5rem;
 `;

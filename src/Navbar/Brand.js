@@ -11,12 +11,17 @@ const Brand = () => {
 export default Brand
 
 const Logo = styled.div`
-     margin: auto 0;
-     color: white;
-     font-size: 40px;
-     margin-left: -8.4%;
+    color: white;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 5px;
+    width: 5%;
+
+    
      @media only screen and (max-width: 600px) {
-        margin-left: 25%;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
     }
 
      :hover {
