@@ -66,6 +66,7 @@ const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
     `;
 
 
@@ -90,7 +91,7 @@ const Header2 = styled.div`
     font-size: 110px;
     color: #00cc99;
     position: absolute;
-    margin-top: 2.5%;
+    margin-top: 45px;
     width: 100%;
     text-align: center;
     padding-left: 1%;
@@ -156,7 +157,7 @@ const Button = styled.button`
     height: 40px;
     width: 60px;
     margin-left: 0.5%;
-  
+    cursor: pointer;
     font-size: 10px;
     padding: 0.25em 1em;
     border: 2px solid #6699ff;
