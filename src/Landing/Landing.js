@@ -185,9 +185,9 @@ const Wrapper = styled.div`
 
 const Disclaimer = styled.p`
     font-size: 8px;
-    width: 300px;
+    width: 350px;
     text-align: justify;
-    margin-left: 180px;
+    margin-left: 125px;
     margin-bottom: 3px;
 `
 
