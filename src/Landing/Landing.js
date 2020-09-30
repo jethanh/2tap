@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 import '../App.css'
 import './betterline.png'
 
 const Landing = () => {
-
+    const [user, setUser] = useState('');
+    const [tag, setTag] = useState('');
+    const handleSubmit = e => {
+        e.preventDefault();
+        console.log(user);
+        console.log(tag);
+    }
     
     return (
         <>
@@ -13,14 +19,14 @@ const Landing = () => {
         <StripeSmall>
                 <img src="https://cdn.discordapp.com/attachments/245032785872551937/724439050676863076/clipart-5-21-21-21-44_1.png" alt="Red Stripe"/>
         </StripeSmall>
-        <Form>
+        <Form onSubmit={handleSubmit}>
             <Header2>二 タップ</Header2>
             <Header className="font">2TAP<span>.</span>GG</Header>
             <Disclaimer className="font">
                      © 2020 2tap.gg. 2tap.gg isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing VALORANT. VALORANT and Riot Games are trademarks or registered trademarks of Riot Games, Inc. VALORANT © Riot Games, Inc.
             </Disclaimer>
             <InputBoxes className="font">
-                <Input placeholder="hello"/> {'>'} <LilInput placeholder="#"/> <Button>TAP</Button>
+                <Input name="username" type="text" value={user} onChange={(e) => setUser(e.target.value)} placeholder="RIOT ID"/> {'>'} <LilInput type="text" value={tag} onChange={e => setTag(e.target.value)}placeholder="#"/> <Button>TAP</Button>
             </InputBoxes>
         </Form>
         <Champs>
