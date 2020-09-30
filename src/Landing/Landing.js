@@ -23,12 +23,14 @@ const Landing = () => {
                 <Input placeholder="hello"/> {'>'} <LilInput placeholder="#"/> <Button>TAP</Button>
             </InputBoxes>
         </Form>
+        <Champs>
             <Jett>
                 <img src="https://vignette.wikia.nocookie.net/valorant/images/7/79/Jett_artwork.png/revision/latest?cb=20200602020209" alt="Valorant Jett"/>
             </Jett>
             <Reyna>
                 <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6577b1f58530e6b2/5eb7cdc121a5027d77420208/V_AGENTS_587x900_Reyna.png" alt="Valorant Reyna"/>
             </Reyna>
+        </Champs>
         </Wrapper>
         </>
     )
@@ -53,7 +55,7 @@ const InputBoxes = styled.div`
     align-items: center;
     margin-bottom: 5px;
     justify-content: center;
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 600px) {
         padding: 5px;
         
     }
@@ -93,7 +95,7 @@ const Header2 = styled.div`
     text-align: center;
     padding-left: 1%;
     font-weight: 800;
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 482px) {
         display: none;
         
     }
@@ -163,27 +165,25 @@ const Button = styled.button`
 
 
 const Jett = styled.div`
-    display: flex;
-    align-items: center;
-    position: absolute;
-    margin-left: 5%;
-    top: 9%;
-    z-index: -1;
-        @media only screen and (max-width: 1919px) {
-            display: none;
-        }
-    `
+margin-top: 50px;
+max-height: 90vh;
+`
 
 const Reyna = styled.div`
-    display: flex;
-    align-items: center;
-    position: absolute;
-    margin-left: 60%;
-    top: 4%;
-    z-index: -1;
-    @media only screen and (max-width: 1919px) {
-        display: none;
-    }
+
+
+`
+const Champs = styled.div`
+display: flex;
+width: 100%;
+justify-content: space-between;
+position: absolute;
+padding-top: 2%;
+overflow: hidden;
+@media only screen and (max-width: 1406px) {
+    display: none;
+    
+}
 `
 
 const Wrapper = styled.div`
@@ -201,7 +201,7 @@ const Disclaimer = styled.p`
     text-align: justify;
     margin-left: 125px;
     margin-bottom: 3px;
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 482px) {
         width: 100%;
         margin-left: 0px;
         padding: 5px;
