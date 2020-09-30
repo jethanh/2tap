@@ -53,6 +53,10 @@ const InputBoxes = styled.div`
     align-items: center;
     margin-bottom: 5px;
     justify-content: center;
+    @media only screen and (max-width: 450px) {
+        padding: 5px;
+        
+    }
 `
 
 const Form = styled.form`
@@ -74,6 +78,10 @@ const Header = styled.div`
     margin-top: 171px;
     font-weight: 800;
     margin-bottom: -20px;
+    @media only screen and (max-width: 450px) {
+        font-size: 75px;
+        
+    }
     
 `
 const Header2 = styled.div`
@@ -85,6 +93,10 @@ const Header2 = styled.div`
     text-align: center;
     padding-left: 1%;
     font-weight: 800;
+    @media only screen and (max-width: 450px) {
+        display: none;
+        
+    }
     
 `
 
@@ -189,6 +201,12 @@ const Disclaimer = styled.p`
     text-align: justify;
     margin-left: 125px;
     margin-bottom: 3px;
+    @media only screen and (max-width: 450px) {
+        width: 100%;
+        margin-left: 0px;
+        padding: 5px;
+        
+    }
 `
 
 export default Landing
