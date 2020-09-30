@@ -133,7 +133,8 @@ const Input = styled.input`
     }
     `
 const LilInput = styled.input`
-    font-size: 20px;
+    font-family: Calibri;
+    font-size: 15px;
     width: 80px;
     height: 40px;
     margin-left: 7px;
