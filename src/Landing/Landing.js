@@ -3,11 +3,9 @@ import styled from "styled-components";
 import '../App.css'
 import './betterline.png'
 import {useHistory} from 'react-router-dom'
-import UserStats from '../UserStats/UserStats'
 
-const Landing = () => {
-    const [user, setUser] = useState('');
-    const [tag, setTag] = useState('');
+const Landing = ({user, setUser, tag, setTag}) => {
+
     const history = useHistory();
 
     const handleSubmit = e => {
@@ -32,7 +30,7 @@ const Landing = () => {
             </Disclaimer>
             <InputBoxes className="font">
                 <Input name="username" type="text" value={user} onChange={(e) => setUser(e.target.value)} placeholder="RIOT ID"/> {'>'} <LilInput type="text" value={tag} onChange={e => setTag(e.target.value)}placeholder="#"/>
-                <Button onClick={() => history.push(`/profile/${user} ${tag}`)}> TAP </Button>
+                <Button onClick={() => history.push(`/stats/${user + ' ' + tag}`)}> TAP </Button>
             </InputBoxes>
         </Form>
         <Champs>

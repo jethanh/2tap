@@ -1,10 +1,10 @@
 import React from 'react'
-
-const UserStats = (props) => {
-
+import {useParams} from 'react-router-dom';
+const UserStats = ({user, tag}) => {
+    let { slug } = useParams();
   return (
     <>
-        <div>Hello World</div>
+        <div>Hello {slug}, we are under construction :D</div>
     </>
   )
 }
