@@ -177,12 +177,12 @@ const Button = styled.button`
 
 
 const Jett = styled.div`
-margin-top: 30px;
+margin-top: 60px;
 max-height: 89vh;
 `
 
 const Reyna = styled.div`
-
+margin-top: 30px;
 
 `
 const Champs = styled.div`
@@ -190,7 +190,6 @@ display: flex;
 width: 100%;
 justify-content: space-between;
 position: absolute;
-padding-top: 2%;
 overflow: hidden;
 @media only screen and (max-width: 1406px) {
     display: none;
