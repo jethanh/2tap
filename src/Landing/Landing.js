@@ -47,7 +47,7 @@ const Landing = ({user, setUser, tag, setTag}) => {
 }
 
 const StripeSmall = styled.div`
-    height 73vh;
+    height 73.9vh;
     margin-left: -42.2%;
     margin-top: 13.7%;
     z-index: -2;
@@ -56,7 +56,10 @@ const StripeSmall = styled.div`
     @media only screen and (max-width: 1919px) {
         display: none;
     }
-    
+    @media only screen and (max-height: 938px) {
+        height: 72vh;
+    }
+     
 `
 const InputBoxes = styled.div`
     display: flex;
@@ -177,12 +180,12 @@ const Button = styled.button`
 
 
 const Jett = styled.div`
-margin-top: 60px;
+margin-top: 50px;
 max-height: 89vh;
 `
 
 const Reyna = styled.div`
-margin-top: 30px;
+margin-top: 20px;
 
 `
 const Champs = styled.div`
