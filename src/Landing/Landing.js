@@ -29,8 +29,8 @@ const Landing = ({user, setUser, tag, setTag}) => {
                      © 2020 2tap.gg. 2tap.gg isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing VALORANT. VALORANT and Riot Games are trademarks or registered trademarks of Riot Games, Inc. VALORANT © Riot Games, Inc.
             </Disclaimer>
             <InputBoxes className="font">
-                <Input name="username" type="text" value={user} onChange={(e) => setUser(e.target.value)} placeholder="RIOT ID"/> {'>'} <LilInput type="text" value={tag} onChange={e => setTag(e.target.value)}placeholder="#"/>
-                <Button onClick={() => history.push(`/stats/${user + ' ' + tag}`)}> TAP </Button>
+                <Input name="username" type="text" value={user} onChange={(e) => setUser(e.target.value)} placeholder="RIOT ID"/> {'>'} <LilInput type="text" value={tag} onChange={e => setTag(e.target.value.replace(/[^\w\s]/gi, ""))}placeholder="#"/>
+                <Button onClick={() => history.push(`/stats/${user}/${tag}`)}> TAP </Button>
             </InputBoxes>
         </Form>
         <Champs>

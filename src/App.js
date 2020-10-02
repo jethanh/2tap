@@ -26,8 +26,8 @@ function App () {
             <GlobalStyle />
           </div>
         </Route>
-        <Route path="/stats/:slug">
-          <UserStats match={match} user={user} tag={tag}/>
+        <Route path="/stats/:slug/:slug2">
+          <UserStats match={match} user={user} tag={tag} setUser={setUser} setTag={setTag}/>
         </Route>
       </>
     )
