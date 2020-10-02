@@ -57,7 +57,7 @@ const StripeSmall = styled.div`
         display: none;
     }
     @media only screen and (max-height: 938px) {
-        height: 72vh;
+        height: 71.9vh;
     }
      
 `
