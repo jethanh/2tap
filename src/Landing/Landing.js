@@ -47,7 +47,7 @@ const Landing = ({user, setUser, tag, setTag}) => {
 }
 
 const StripeSmall = styled.div`
-    height 73.9vh;
+    height 73vh;
     margin-left: -42.2%;
     margin-top: 13.7%;
     z-index: -2;
@@ -198,11 +198,10 @@ overflow: hidden;
 `
 
 const Wrapper = styled.div`
-
     font-size: 50px;
     display: flex;
     flex-direction: column;
-    width: 10px solid blue;
+
 `
 
 
