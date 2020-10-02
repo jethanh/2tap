@@ -178,7 +178,7 @@ const Button = styled.button`
 
 const Jett = styled.div`
 margin-top: 40px;
-max-height: 90vh;
+max-height: 80vh;
 `
 
 const Reyna = styled.div`
