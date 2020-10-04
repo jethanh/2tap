@@ -13,7 +13,7 @@ function App () {
 
   let match = useRouteMatch({
     path: '/stats/:slug/',
-    strict: true,
+    strict: false,
     sensitive: true
   })
 

@@ -1,11 +1,11 @@
 import React from 'react'
-import {useParams, useHistory} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import axios from 'axios';
 const UserStats = ({user, tag}) => {
     let { slug } = useParams();
     let { slug2 } = useParams();
 
-    let history = useHistory();
+    // let history = useHistory();
 
     axios.get(`https://americas.api.riotgames.com/riot/account/v1/accounts/by-riot-id/${slug}/${slug2}`, {
         headers: {
@@ -23,19 +23,19 @@ const UserStats = ({user, tag}) => {
             console.error(error)
         })
         
-        const testObj = {
-            user: 'ballz',
-            tag: 'dickss275'
-        }
+        // const testObj = {
+        //     user: 'ballz',
+        //     tag: 'dickss275'
+        // }
 
-        const clickHandler = () => {
-            history.push(`/stats/${testObj.user}/${testObj.tag}`)
-        }
+        // const clickHandler = () => {
+        //     history.push(`/stats/${testObj.user}/${testObj.tag}`)
+        // }
 
   return (
     <>
         <div>slug test: {slug} #{slug2}</div>
-        <button onClick={clickHandler}>Test</button>
+        {/* <button onClick={clickHandler}>Test</button> */}
         <p>Next, pass the user and tag into a GET request to the Riot API proxy I set up on AWS Lambda</p>
         <p>This will return the user's puuid</p>
         <p>run a GET request on the puuid for the user's match history</p>
