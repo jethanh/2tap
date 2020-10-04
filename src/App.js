@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Navbar/Navbar';
 import Landing from './Landing/Landing'
 import GlobalStyle from './styles/Global';
-import {Route, useRouteMatch} from 'react-router-dom'
+import {Route, BrowserRouter as Router} from 'react-router-dom'
 import UserStats from './UserStats/UserStats'
 
 function App () {
@@ -11,25 +11,20 @@ function App () {
   const [user, setUser] = useState('');
   const [tag, setTag] = useState('');
 
-  let match = useRouteMatch({
-    path: '/stats/:slug/',
-    strict: true,
-    sensitive: true
-  })
 
     return (
-      <>
-        <Route exact path="/">
-          <div className="column">
-            <Navbar/>
-            <Landing user={user} setUser={setUser} tag={tag} setTag={setTag}/>
-            <GlobalStyle />
-          </div>
-        </Route>
-        <Route path="/stats/:slug/:slug2">
-          <UserStats match={match} user={user} tag={tag} setUser={setUser} setTag={setTag}/>
-        </Route>
-      </>
+      <Router>
+          <Route exact path="/">
+            <div className="column">
+              <Navbar/>
+              <Landing user={user} setUser={setUser} tag={tag} setTag={setTag}/>
+              <GlobalStyle />
+            </div>
+          </Route>
+          <Route path="/stats/:slug/:slug2">
+            <UserStats/>
+          </Route>
+      </Router>
     )
   }
 
