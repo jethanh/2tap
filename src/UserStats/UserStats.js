@@ -27,7 +27,7 @@ const UserStats = ({user, tag}) => {
         }
 
         let userLinks = {
-            link: `http://2tap.gg/stats/${testObj.user}/${testObj.tag}`
+            link: `2tap.gg/stats/${testObj.user}/${testObj.tag}`
         }
 
 
