@@ -30,7 +30,7 @@ const Landing = ({user, setUser, tag, setTag}) => {
             </Disclaimer>
             <InputBoxes className="font">
                 <Input name="username" type="text" value={user} onChange={(e) => setUser(e.target.value)} placeholder="RIOT ID"/> {'>'} <LilInput type="text" value={tag} onChange={e => setTag(e.target.value.replace(/[^\w\s]/gi, ""))}placeholder="#"/>
-                <Button onClick={() => history.push(`/stats/${user}/${tag}`)}> TAP </Button>
+                <Button onClick={() => history.push(`/stats/`)}> TAP </Button>
             </InputBoxes>
         </Form>
         <Champs>

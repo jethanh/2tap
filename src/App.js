@@ -14,6 +14,7 @@ function App () {
 
     return (
       <Router>
+        <Switch>
           <Route exact path="/">
             <div className="column">
               <Navbar/>
@@ -21,11 +22,10 @@ function App () {
               <GlobalStyle />
             </div>
           </Route>
-          <Switch>
-            <Route path="/stats/:slug/:slug2">
-              <UserStats/>
+            <Route path="/stats/">
+              <UserStats user={user} tag={tag}/>
             </Route>
-          </Switch>
+        </Switch>
       </Router>
     )
   }

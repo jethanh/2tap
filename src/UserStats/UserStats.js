@@ -1,16 +1,11 @@
 import React from 'react'
-import {useParams} from 'react-router-dom';
 
-const UserStats = () => {
-    let { slug, slug2 } = useParams();
+const UserStats = ({user, tag}) => {
 
   return (
     <>
-        <div>slug test: {slug} #{slug2}</div>
+        <div>slug test: {user} #{tag}</div>
 
-        <p>Next, pass the user and tag into a GET request to the Riot API proxy I set up on AWS Lambda</p>
-        <p>This will return the user's puuid</p>
-        <p>run a GET request on the puuid for the user's match history</p>
     </>
   )
 }
