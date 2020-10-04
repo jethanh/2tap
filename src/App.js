@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Navbar/Navbar';
 import Landing from './Landing/Landing'
 import GlobalStyle from './styles/Global';
-import {Route, BrowserRouter as Router} from 'react-router-dom'
+import {Route, BrowserRouter as Router, Switch} from 'react-router-dom'
 import UserStats from './UserStats/UserStats'
 
 function App () {
@@ -21,9 +21,11 @@ function App () {
               <GlobalStyle />
             </div>
           </Route>
-          <Route path="/stats/:slug/:slug2">
-            <UserStats/>
-          </Route>
+          <Switch>
+            <Route path="/stats/:slug/:slug2">
+              <UserStats/>
+            </Route>
+          </Switch>
       </Router>
     )
   }
