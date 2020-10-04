@@ -20,12 +20,21 @@ const UserStats = ({user, tag}) => {
         .catch((error) => {
             console.error(error)
         })
+        
+        const testObj = {
+            user: 'ballz',
+            tag: 'dickss25'
+        }
+
+        let userLinks = {
+            link: `http://2tap.gg/stats/${testObj.user}/${testObj.tag}`
+        }
 
 
   return (
     <>
         <div>slug test: {slug} #{slug2}</div>
-
+        <a href={userLinks.link}>Test</a>
         <p>Next, pass the user and tag into a GET request to the Riot API proxy I set up on AWS Lambda</p>
         <p>This will return the user's puuid</p>
         <p>run a GET request on the puuid for the user's match history</p>
