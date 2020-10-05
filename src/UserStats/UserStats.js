@@ -40,10 +40,14 @@ const UserStats = ({user, tag}) => {
         <div>
         {arr.map(player => (
             <div className="user-stats-card">
+                <div className="score">
+                    <p className="score-header">SCORE</p>
+                    <p className="score-stats">{player.stats.score}</p>
+                </div>
                 <div className="kda">
                     <p className="kda-header">KDA</p>
                     <p className="kda-stats">{player.stats.kills}/{player.stats.deaths}/{player.stats.assists}</p>
-                    
+                    <p className="kda-ratio">{((player.stats.kills + player.stats.assists) / player.stats.deaths).toFixed(2)}</p>  
                 </div>
             </div>
         ))}
