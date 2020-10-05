@@ -9,7 +9,9 @@ const UserStats = ({user, tag}) => {
     const userData = valdata.players.map(player => {
         if (player.puuid === "fpco9wmv9xvNlZsB16ChQyNkuASzzUJFSITHYzC5mDctuVls_7tGecmkfDk53G3mgVPWvnFUUy95_Q") {
             return player
-        }
+        } 
+        
+        return null
     })
 
     const arr = []
