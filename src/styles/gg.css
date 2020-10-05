@@ -5,5 +5,13 @@
     font-weight: normal;
     src: local('VALORANT Regular'), url('Valorant Font.woff') format('woff');
   }
+}
 
+.stats-font {
+  @font-face{
+    font-family: 'Oswald Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Oswald'), url('Oswald-VariableFont_wght.ttf') format('ttf')
+  }
 }

@@ -22,7 +22,7 @@ function App () {
               <GlobalStyle />
             </div>
           </Route>
-            <Route path="/stats/">
+            <Route path="/stats/:slug/:slug2">
               <UserStats user={user} tag={tag}/>
             </Route>
         </Switch>

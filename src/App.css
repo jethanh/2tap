@@ -19,3 +19,40 @@
         display: flex;
         flex-direction: column;
     }
+
+    .user-stats-card {
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .kda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        width: 10%;
+    }
+
+    .kda-header {
+        border: 1px solid blue;
+        font-family: Oswald;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .kda-stats {
+        border: 1px solid red;
+        font-size: 20px;
+        font-family: Oswald;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
