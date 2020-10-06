@@ -44,8 +44,8 @@ const UserStats = ({user, tag}) => {
             <div className="user-stats-card">
                 <div className="match-info">
                     <div className="match-header">
-                        <span className="match-type">Competitive</span>
-                        <span className="match-map">Ascent</span>
+                        <span className="match-type">COMPETITIVE</span>
+                        <span className="match-map">ASCENT</span>
                     </div>
                 </div>
                 <div className="stats-container">
