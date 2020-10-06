@@ -6,7 +6,7 @@ const UserStats = ({user, tag}) => {
     let { slug, slug2 } = useParams();
 
     
-    const userData = valdata.players.map(player => {
+    const userData = valdata.players.map(player => { //grab the stats of the specified player, this returns an array with of all players - but only the specified player will have data available.
         if (player.puuid === "fpco9wmv9xvNlZsB16ChQyNkuASzzUJFSITHYzC5mDctuVls_7tGecmkfDk53G3mgVPWvnFUUy95_Q") {
             return player
         } 
@@ -14,23 +14,25 @@ const UserStats = ({user, tag}) => {
         return null
     })
 
-    const arr = []
+    const playerMatchHistory = [] //initialize an empty array to hold player matches.
     console.log(userData[0].stats)
-    arr.push(userData[0])
-    console.log(arr)
+    playerMatchHistory.push(userData[0]) //i need to be able to identify the index that contains data (because it will not always be the 0th index), and push that instead. [if index !null]
+    console.log(playerMatchHistory, "Player's match history") //sample JSON only provides 1 match, I need to test with multiple matches in history
 
-     useEffect(() => {
+     useEffect(() => { 
+         //this function can be improved. It will need to be able to loop through a players match history, and attach a "won" boolenan to each of them based on match outcome.
+         // *this is a first pass, just to give myself something to work with*
         if (userData[0].teamId === "Red") {
             if(valdata.teams[0].teamId === "Red") {
-                return arr[0].won = valdata.teams[0].won
+                return playerMatchHistory[0].won = valdata.teams[0].won
             }
         } else if (userData[0].teamId === "Blue") {
             if(valdata.teams[1].teamId === "Blue"){
-                return arr[0].won = valdata.teams[1].won
+                return playerMatchHistory[0].won = valdata.teams[1].won
             }
         } else {
-            return null
-            }
+            return playerMatchHistory[0].won = null;
+        }
         })
 
   return (
@@ -38,16 +40,24 @@ const UserStats = ({user, tag}) => {
         <div>input passed via URL 'slugs': {slug} #{slug2}</div>
         <div>input passed via Props: {user} #{tag}</div>
         <div>
-        {arr.map(player => (
+        {playerMatchHistory.map(player => (
             <div className="user-stats-card">
-                <div className="score">
-                    <p className="score-header">SCORE</p>
-                    <p className="score-stats">{player.stats.score}</p>
+                <div className="match-info">
+                    <div className="match-header">
+                        <span className="match-type">Competitive</span>
+                        <span className="match-map">Ascent</span>
+                    </div>
                 </div>
-                <div className="kda">
-                    <p className="kda-header">KDA</p>
-                    <p className="kda-stats">{player.stats.kills}/{player.stats.deaths}/{player.stats.assists}</p>
-                    <p className="kda-ratio">{((player.stats.kills + player.stats.assists) / player.stats.deaths).toFixed(2)}</p>  
+                <div className="stats-container">
+                    <div className="score">
+                        <p className="score-header">SCORE</p>
+                        <p className="score-stats">{player.stats.score}</p>
+                    </div>
+                    <div className="kda">
+                        <p className="kda-header">KDA</p>
+                        <p className="kda-stats">{player.stats.kills}/{player.stats.deaths}/{player.stats.assists}</p>
+                        <p className="kda-ratio">{((player.stats.kills + player.stats.assists) / player.stats.deaths).toFixed(2)}</p>  
+                    </div>
                 </div>
             </div>
         ))}
