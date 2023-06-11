@@ -14,7 +14,7 @@ const UserStats = ({user, tag}) => {
         return null
     })
 
-    const playerMatchHistory = [] //initialize an empty array to hold player matches.
+    const playerMatchHistory = [] //initialize an empty array to hold player matches
     console.log(userData[0].stats)
     playerMatchHistory.push(userData[0]) //i need to be able to identify the index that contains data (because it will not always be the 0th index), and push that instead. [if index !null]
     console.log(playerMatchHistory, "Player's match history") //sample JSON only provides 1 match, I need to test with multiple matches in history
